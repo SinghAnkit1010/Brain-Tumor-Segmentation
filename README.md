@@ -15,6 +15,12 @@ Welcome to the Brain Tumor Segmentation project! This initiative focuses on leve
   - Class 3: Enhancing Tumor
 - **Image Dimensions:** (240, 240, 155)
 
+- this is the MRI scan of 
+
+https://github.com/SinghAnkit1010/Brain-Tumor-Segmentation/assets/103994994/6aaac3b8-57eb-4f7a-ac15-b08de6695249
+
+
+
 ## Preprocessing 
 
 we applied some preprocessing steps to prepare dataset for training:
@@ -30,9 +36,8 @@ we applied some preprocessing steps to prepare dataset for training:
 ## Model Architecture
 
 Understanding the 3D nature of our data, we opted for a robust architecture:
-
-- **Model Type:** 3D U-Net
-- **Convolution:** Applied across all three dimensions for comprehensive feature extraction.
+we have used 3D UNet model in which we feed 3D data to our model and convolution will apply along height,width and depth.
+It is better to use model which take 3D MRI scans instead of using model which take 2D Slices of MRI scans,because it will leads to better accuracy.
 
 ## Training Configuration
 

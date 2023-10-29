@@ -6,8 +6,8 @@ Welcome to the Brain Tumor Segmentation project! This initiative focuses on leve
 
 ## Dataset Details
 
-- **Data Format:** NIfTI
-- **Modalities:** FLAIR, T1w, T1gd, T2w
+- **Data Format:** all MRI scans are stored in NIfTI file format
+- **Modalities:** This dataset have 4 modalities FLAIR, T1w, T1gd, T2w
 - **Label Classes:**
   - Class 0: Background
   - Class 1: Edema
@@ -15,28 +15,17 @@ Welcome to the Brain Tumor Segmentation project! This initiative focuses on leve
   - Class 3: Enhancing Tumor
 - **Image Dimensions:** (240, 240, 155)
 
-## Data Split
+## Preprocessing 
 
-To ensure robust model training and evaluation, we meticulously organized our dataset:
-
-- **Training Data:** 350 samples
-- **Validation Data:** 50 samples
-
-## Preprocessing Pipeline
-
-Our preprocessing pipeline plays a crucial role in enhancing the model's performance:
+we applied some preprocessing steps to prepare dataset for training:
 
 1. **Cropping:** We applied cropping along each axis to resize the images to a more manageable shape of (128, 128, 128).
 2. **Normalization:** Prior to model input, we normalized MRI scans for consistent and effective data processing.
-3. **Augmentation Techniques:**
-   - RandomFlip
-   - RandomBlur
-
-## Memory Optimization
-
-Given the inherent challenges of working with voluminous images, we implemented a thoughtful strategy:
-
-- **Patching:** To overcome memory constraints, we divided original MRI scans into 8 patches of size (64, 64, 64).
+3. **Augmentation Techniques:** we applied some augmentation techniques on training data such as RandomFlip and RandomBlur
+4. ** Data Split:** we have used 350 MRI scans for training and 50 MRI scan for validation
+5. ** Memory Optimization:** since our MRI data are of dimension (128,128,128),it is not feasible to fit into memory,
+                             so we have used patching technique in which we have divided original MRI scans into 8 patches
+                             of shape (64,64,64)
 
 ## Model Architecture
 

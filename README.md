@@ -52,6 +52,6 @@ Ensuring optimal learning, our training configuration is as follows:
 
 After training our model for 25 epochs, we achieved dice score of 0.5 on validation data which can be improved by further training.
 **this is the prediction of our model on a single validation data:**
-#**Actual**
+**#Actual**
 
 

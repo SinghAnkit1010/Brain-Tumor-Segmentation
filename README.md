@@ -15,7 +15,7 @@ Welcome to the Brain Tumor Segmentation project! This initiative focuses on leve
   - Class 3: Enhancing Tumor
 - **Image Dimensions:** (240, 240, 155)
 
-- this is the MRI scan of 
+- **this is the axial view of MRI scan of a single patient:**
 
 https://github.com/SinghAnkit1010/Brain-Tumor-Segmentation/assets/103994994/6aaac3b8-57eb-4f7a-ac15-b08de6695249
 

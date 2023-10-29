@@ -53,15 +53,8 @@ Ensuring optimal learning, our training configuration is as follows:
 After training our model for 25 epochs, we achieved dice score of 0.5 on validation data which can be improved by further training.
 **this is the prediction of our model on a single validation data:**
 
-## Actual                                                   ## Predicted
-
-
-
-
+## Actual                
 https://github.com/SinghAnkit1010/Brain-Tumor-Segmentation/assets/103994994/fcbdabbf-fb0e-4d5c-b466-be46c441868a
-
-
-
-
+## Predicted
 https://github.com/SinghAnkit1010/Brain-Tumor-Segmentation/assets/103994994/9913e4d6-48d3-41df-94c0-081492748257
 

@@ -22,8 +22,8 @@ we applied some preprocessing steps to prepare dataset for training:
 1. **Cropping:** We applied cropping along each axis to resize the images to a more manageable shape of (128, 128, 128).
 2. **Normalization:** Prior to model input, we normalized MRI scans for consistent and effective data processing.
 3. **Augmentation Techniques:** we applied some augmentation techniques on training data such as RandomFlip and RandomBlur
-4. ** Data Split:** we have used 350 MRI scans for training and 50 MRI scan for validation
-5. ** Memory Optimization:** since our MRI data are of dimension (128,128,128),it is not feasible to fit into memory,
+4. **Data Split:** we have used 350 MRI scans for training and 50 MRI scan for validation
+5. **Memory Optimization:** since our MRI data are of dimension (128,128,128),it is not feasible to fit into memory,
                              so we have used patching technique in which we have divided original MRI scans into 8 patches
                              of shape (64,64,64)
 

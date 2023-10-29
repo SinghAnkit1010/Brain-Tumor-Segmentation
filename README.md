@@ -35,11 +35,11 @@ we applied some preprocessing steps to prepare dataset for training:
 
 ## Model Architecture
 
-Understanding the 3D nature of our data, we opted for a robust architecture:
+Understanding the 3D nature of our data, we opted for a robust architecture.
 we have used 3D UNet model in which we feed 3D data to our model and convolution will apply along height,width and depth.
 It is better to use model which take 3D MRI scans instead of using model which take 2D Slices of MRI scans,because it will leads to better accuracy.
 
-## Training Configuration
+## Training 
 
 Ensuring optimal learning, our training configuration is as follows:
 
@@ -48,10 +48,10 @@ Ensuring optimal learning, our training configuration is as follows:
 - **Learning Rate:** 0.0001
 - **Epochs:** 25
 
-## Results and Performance
+## Evaluation
 
-After 25 epochs of intensive training, our model demonstrated notable proficiency:
+After training our model for 25 epochs, we achieved dice score of 0.5 on validation data which can be improved by further training.
+**this is the prediction of our model on a single validation data:**
+##**Actual**
 
-- **Validation Dice Score:** 0.5
 
-Feel free to delve into the codebase, tailor it to your needs, and explore further improvements. If you have any inquiries or suggestions, don't hesitate to reach out—we're here to collaborate and enhance this impactful project!

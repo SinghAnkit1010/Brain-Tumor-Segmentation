@@ -58,3 +58,6 @@ https://github.com/SinghAnkit1010/Brain-Tumor-Segmentation/assets/103994994/fcbd
 ## Predicted
 https://github.com/SinghAnkit1010/Brain-Tumor-Segmentation/assets/103994994/9913e4d6-48d3-41df-94c0-081492748257
 
+## Acknowledgements
+we have trained our model on the dataset taken from MedicalDecathlon.
+https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2
